@@ -43,12 +43,12 @@ const App = () => {
     tz_id: "Europe/London",
   },  
 });
- 
-const icon =data.current.condition.icon;
+const icon ="https:" + data.current.condition.icon;
 
 console.log("===================================");
 console.log(data.current.cloud);
 console.log(icon);
+console.log("https://cdn.weatherapi.com/weather/64x64/night/122.png");
 console.log("===================================");
   React.useEffect(() => {
    // fetch(
@@ -80,4 +80,4 @@ console.log("===================================");
 
 export default App;
 
-const styles = StyleSheet.create{{url: icon}};
+const styles = StyleSheet.create({});
